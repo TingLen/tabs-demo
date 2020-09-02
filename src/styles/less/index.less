@@ -1,0 +1,38 @@
+@import '~antd/dist/antd.less';
+@import "reset";
+@import "./components/index";
+@import "./common";
+
+body {
+  position: relative;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#side-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s, padding 0s;
+  z-index: 1000;
+}
+
+.sider {
+  z-index: 101;
+  box-shadow: 2px 2px 4px 0 rgba(29,35,41,.05);
+}
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border-right: none;
+}
